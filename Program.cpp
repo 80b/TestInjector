@@ -33,7 +33,7 @@ bool does_file_exist(string file_name)
 
 int main()
 {
-    MessageBox(0, "Injector, Made By Raz", 0)
+    MessageBox(0, "Injector, Made By Raz","Injecting...", 0)
     DWORD proc_id = NULL;
     char dll_path[MAX_PATH];
     // will make a actual dll soon
@@ -87,5 +87,5 @@ int main()
     }
     CloseHandle(h_process);
     VirtualFreeEx(h_process, allocated_memory, NULL, MEM_RELEASE);
-    MessageBox(0, "Injected! You may now close this window.", 0)
+    MessageBox(0, "Injected! You may now close this window.", "Done!", 0)
 }

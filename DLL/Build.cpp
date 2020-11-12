@@ -9,7 +9,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     switch(u1_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        MessageBox(NULL, "Injected!", "Success", NULL)
+        MessageBox(NULL, "Injected!", "Success", NULL); //lol oops retard moment
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
     case DLL_PROCESS_DETACH:
